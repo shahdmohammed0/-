@@ -1,0 +1,1796 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+:root {
+    --title-name-color: #1b2223;
+    --footer-color: #2c4755;
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+body {
+     background-color: var(--title-name-color); 
+}
+.header {
+    background-color: rgba(44, 71, 85, 0.849);
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    div { 
+        width: 300px;
+        h1 {
+            font-family: "Dancing Script", cursive;
+            color: gold;
+            text-transform: capitalize;
+            font-size: 35px;
+            padding: 20px ;
+            margin-left: 150px;
+           
+        }    
+    }
+    .nav{
+        ul {
+            list-style: none;
+            li:first-child {
+                position: absolute;
+                top: 30px;
+                right: 10%;
+                    a{
+                        font-family: "Dancing Script", cursive;
+                        text-decoration: none;
+                        font-size: 20px;
+                        padding: 30px 15px 25px;
+                    }
+            }
+            li:nth-child(2) {
+                position: absolute;
+                top: 30px;
+                right: 19%;
+                    a{
+                        font-family: "Dancing Script", cursive;
+                        text-decoration: none;
+                        font-size: 20px;
+                        padding: 30px 15px 25px;
+                    }
+            }
+            li:last-child {
+                position: absolute;
+                top: 30px;
+                right: 30%;
+                    a{
+                        font-family: "Dancing Script", cursive;
+                        text-decoration: none;
+                        font-size: 20px;
+                        padding: 30px 15px 25px;
+                    }
+            }
+            li a::after{
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                bottom: -27px;
+                left: 0;
+                background-color: gold;
+                transition: 1s;
+            }
+            li a:hover::after{
+                width: 100%;
+                height: 3px;
+            }
+            li a:hover{
+     background-color: #747676;
+                border-bottom: #6195ff;
+            }
+            li a:focus{
+                color: red;
+                background-color: var(--footer-color);
+            }
+        }
+    }
+}
+.sec-header-2 {
+    width: 100%;
+    height: 100px;
+    background-color:  rgba(44, 71, 85, 0.849);
+    position: fixed;
+    top: 81px;
+    z-index: 990;
+    opacity: 0;
+    transition: 1.2s ease-out;
+    input {
+        position: absolute;
+        right: 10%;
+        top: 30%;
+        width: 400px;
+        height: 50px;
+        border-radius: 10px;
+        padding-left: 20px;
+    }
+    input::placeholder {
+        font-size: 20px;
+    }
+    .fa-bars {
+        font-size: 35px;
+        position: absolute;
+        left: 8%;
+        top: 30%;
+    }
+    .basket {
+        position: absolute;
+        left: 40%;
+        top: 30%;
+        i {
+            font-size: 35px;
+        }
+        span {
+            font-size: 25px;
+            margin-left: 20px;
+            text-transform: capitalize;
+        }
+    }
+    .account {
+        position: absolute;
+        left: 20%;
+        top: 30%;
+        i {
+            font-size: 35px;
+        }
+        span {
+            font-size: 25px;
+            margin-left: 20px;
+            text-transform: capitalize;
+        }
+    }
+}
+.sec-header-2:hover {
+    opacity: 1;
+    transition: 1s ease;
+}
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../photos/perfume-essence-natural-captured-on-a-dark-textured-background_9986453.jpg!f305cw);
+    background-size: cover;
+    position: relative;
+    opacity: .7;
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        translate: 0% 700%;
+        span {
+            color: rgb(176, 104, 56);
+            font-family: "Dancing Script", cursive;
+        }
+    }
+    p {
+        font-family: "Dancing Script", cursive;
+        text-transform: capitalize;
+        color: rgb(225, 190, 54);
+        font-size: 25px;
+        position: absolute;
+        top: 52%;
+        left: 29%;
+    }
+    .button-1 {
+        background-color: #eee;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-family: "Dancing Script", cursive;
+        font-weight: 900;
+        padding: 20px 30px;
+        border: solid 2px #000;
+        border-radius: 10px;
+        color: #000;
+        position: absolute;
+        top: 58%;
+        left: 38%;
+    }
+    .button-1:hover {
+        background-color:  #f3bb8daf;
+        color: #eee;
+        border: solid 2px #eee;
+    }
+    .button-2 {
+        background-color:  #ffffff;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-family: "Dancing Script", cursive;
+        font-weight: 900;
+        padding: 20px 30px;
+        border: solid 2px #000;
+        border-radius: 10px;
+        color: #000000;
+        position: absolute;
+        top: 58%;
+        left: 50%;
+    }
+    .button-2:hover {
+        background-color:  #f99e8caf;
+        color: #eee;
+        border: solid 2px #eee;
+    }
+}
+.main-1{
+    margin-top: 50px;
+    h1 {
+        width: 260px;
+        translate: 190% 0%;
+        text-transform: capitalize;
+        color: gold;
+        font-family: "Dancing Script", cursive;
+        padding-bottom: 20px;
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+    .line {
+        width: 160px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: gold;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+    .sec-1{
+        height: 90vh;
+        text-align: center;
+        margin-bottom: 50px;
+            .content{
+                width: 90%;
+                height: 300px;
+                background-color: rgba(152, 147, 147, 0.9) ;
+                border-right: 4px goldenrod solid;
+                border-left: 4px goldenrod solid;
+                text-align: center;
+                margin: auto;
+                position: relative;
+                transition: 4s;
+                    .parent, .parent-2, .parent-3{
+                        width: 25%;
+                        height: 200px;
+                        border: 0;
+                        background-image: url(../photos/WhatsApp\ Image\ 2024-10-17\ at\ 00.37.44_ba6979ff.jpg);
+                        background-size: cover;
+                        color: #fff;
+                        border-radius: 5px;
+                        position: relative;
+                        margin: auto;
+                        z-index: 25;
+                        box-shadow: 6px 1px 5px black;
+                            .cover{
+                                width: 100%;
+                                position: absolute;
+                                color: #fff;
+                                height: 100%;
+                                background-color:rgba(0, 0, 0, 0.5);
+                                z-index: 20;
+                                    i{
+                                        padding: 14px;
+                                        margin-top: 15px;
+                                        font-size: 20px;
+                                        color: #fff;
+                                        text-align: center;
+                                    }
+                                    a{
+                                        text-decoration: none;
+                                        color: rgb(190, 137, 102);
+                                        font-weight: 900;
+                                    
+                                    }
+                            } 
+                            p{
+                                font-size: 20px;
+                                margin-top: 10px;
+                                margin-bottom: 11px;
+                                font-family: "Dancing Script", cursive;
+                            }
+                    }
+                    .parent {
+                        position: absolute;
+                        top: 15%;
+                        left: 5%;
+                    }
+                    .parent-2 {
+                        position: absolute;
+                        top: 15%;
+                        left: 38%;
+                    }
+                    .parent-3 {
+                        position: absolute;
+                        top: 15%;
+                        right: 5%;
+                    }
+                    .parent::after{
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height:0 ;
+                        top: 0;
+                        left: 0;
+                        background-color:#000000;
+                        opacity: 0;
+                        transition: 1s;
+                    }
+                    .parent:hover::after{
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0.9;
+                        
+                    }
+                    .parent-2::after{
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height:0 ;
+                        top: 0;
+                        left: 0;
+                        background-color:#000000;
+                        opacity: 0;
+                        transition: 1s;
+                    }
+                    .parent-2:hover::after{
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0.9;
+                        
+                    }
+                    .parent-3::after{
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height:0 ;
+                        top: 0;
+                        left: 0;
+                        background-color:#000000;
+                        opacity: 0;
+                        transition: 1s;
+                    }
+                    .parent-3:hover::after{
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0.9;
+                        
+                    }
+                    ul{
+                        display: flex;
+                        justify-content: space-around;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 20px;
+                            li{
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 50%;
+                                background-color: #000000;
+                                list-style: none;
+                            }
+                    }
+            }
+            .content:hover{
+                background-color: rgba(164, 192, 197, 0.9);
+            }
+            .content::after{
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 8px ;
+                top: 0;
+                left: 0;
+                background-color: goldenrod;
+                transition: 2s ease;
+            }
+            .content:hover::after{
+                width: 100%;
+                height: 8px;
+                opacity: 0.9;
+                
+            }
+            .content:before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 8px;
+                bottom: 0;
+                right: 0;
+                background-color: goldenrod;
+                transition: 2s ease-in-out;
+            }
+            .content:hover::before {
+                width: 100%;
+                height: 8px;
+            }
+    }
+}
+
+.ss { 
+    width: 300px;
+    height: 90px;
+
+    h1 {
+        width: 400px;
+        font-family: "Dancing Script", cursive;
+        color: gold;
+        text-transform: capitalize;
+        font-size: 30px;
+        padding: 20px ;
+        margin-left: 520px;
+        margin-top: -380px;
+    
+    }    
+}
+    
+.line2 {
+    width: 230px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: gold;
+    margin: auto;
+    
+    margin-top: -20px;
+}
+
+.main-2 {
+    margin-top: 50px;
+    .sec-1 {
+        width: 100%;
+        height: 355px;
+        position: relative;
+            .pro-1 {
+                width: 300px;
+                height: 300px;
+                background-color: #ffffff;
+                position: absolute;
+                right: 10%;
+                top: 30px;
+                border-radius: 20px;
+                    img {
+                        width: 300px;
+                        height: 300px;
+                        border-radius: 20px;
+                    }
+                    span {
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        position: absolute;
+                        top: 20px;
+                        right: 23px;
+                        background-color: green;
+                        border-radius: 5px;
+                        text-align: center;
+                        padding: 10px 42px 10px 10px;
+                        z-index: 222;
+                    }
+                    .fa-heart{
+                        position: absolute;
+                        top: 20px;
+                        left: 30px;
+                        font-size: 20px;
+                        background-color: #ffffff;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: #000;
+                        z-index: 222;
+                    }
+                    .fa-heart:hover {
+                        color: red;
+                    }
+                    .content-1 {
+                        width: 300px;
+                        height: 300px;
+                        position: absolute;
+                        top: 0%;
+                        left: 0%;
+                        right: 0%;
+                        bottom: 0%;
+                        opacity: 0;
+                        transition: opacity 1.6s;
+                        border-radius: 20px;
+                        h3 {
+                            font-family: "Dancing Script", cursive;
+                            text-transform: capitalize;
+                            text-align: center;
+                            font-size: 25px;
+                            margin: 20px 0px 50px;
+                            color: rgba(255, 255, 255, 0.911);
+                            position: absolute;
+                            top: 20%;
+                            right: 18%;
+                        }
+                        p {
+                            font-family: "Dancing Script", cursive;
+                            text-transform: capitalize;
+                            font-size: 25px;
+                            color: white;
+                            text-align: center;
+                            position: absolute;
+                            top: 50%;
+                            right: 18%;
+                        }
+                        #icon-2 {
+                            font-size: 25px;
+                            text-align: center;
+                            color:#ffffff;
+                            margin-left: 45%;
+                            margin-top: 20px;
+                            position: absolute;
+                            top: 70%;
+                            right: 45%;
+                            cursor: pointer;
+                        }
+                        #icon-2:hover {
+                            color: red;
+                        }
+                    }
+            }
+            .pro-1:hover .content-1 {
+                opacity: 1; 
+                background-color: rgba(0, 0, 0, 0.297);
+            }
+            .pro-2 {
+                width: 300px;
+                height: 300px;
+                background-color: #ffffff;
+                position: absolute;
+                right: 40%;
+                top: 30px;
+                border-radius: 20px;
+                    img {
+                        width: 300px;
+                        height: 300px;
+                        border-radius: 20px;
+                    }
+                    span {
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        position: absolute;
+                        top: 20px;
+                        right: 23px;
+                        background-color: green;
+                        border-radius: 5px;
+                        text-align: center;
+                        padding: 10px 42px 10px 10px;
+                        z-index: 222;
+                    }
+                    .fa-heart{
+                        position: absolute;
+                        top: 20px;
+                        left: 30px;
+                        font-size: 20px;
+                        background-color: #ffffff;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: #000;
+                        z-index: 222;
+                    }
+                    .fa-heart:hover {
+                        color: red;
+                    }
+                    .content-2 {
+                        width: 300px;
+                        height: 300px;
+                        position: absolute;
+                        top: 0%;
+                        left: 0%;
+                        right: 0%;
+                        bottom: 0%;
+                        opacity: 0;
+                        transition: opacity 1.6s;
+                        border-radius: 20px;
+                        h3 {
+                            font-family: "Dancing Script", cursive;
+                            text-transform: capitalize;
+                            text-align: center;
+                            font-size: 25px;
+                            margin: 20px 0px 50px;
+                            color: rgba(255, 255, 255, 0.911);
+                            position: absolute;
+                            top: 20%;
+                            right: 35%;
+                        }
+                        p {
+                            font-family: "Dancing Script", cursive;
+                            text-transform: capitalize;
+                            font-size: 25px;
+                            color: white;
+                            text-align: center;
+                            position: absolute;
+                            top: 50%;
+                            right: 18%;
+                        }
+                        #icon-2 {
+                            font-size: 25px;
+                            text-align: center;
+                            color:#ffffff;
+                            margin-left: 45%;
+                            margin-top: 20px;
+                            position: absolute;
+                            top: 70%;
+                            right: 45%;
+                            cursor: pointer;
+                        }
+                        #icon-2:hover {
+                            color: red;
+                        }
+                    }
+            }
+            .pro-2:hover .content-2 {
+                opacity: 1; 
+                background-color: rgba(0, 0, 0, 0.297);
+            }
+            .pro-3 {
+                width: 300px;
+                height: 300px;
+                background-color: #ffffff;
+                position: absolute;
+                left: 10%;
+                top: 30px;
+                border-radius: 20px;
+                    img {
+                        width: 300px;
+                        height: 300px;
+                        border-radius: 20px;
+                    }
+                    span {
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        position: absolute;
+                        top: 20px;
+                        right: 23px;
+                        background-color: green;
+                        border-radius: 5px;
+                        text-align: center;
+                        padding: 10px 42px 10px 10px;
+                        z-index: 222;
+                    }
+                    .fa-heart{
+                        position: absolute;
+                        top: 20px;
+                        left: 30px;
+                        font-size: 20px;
+                        background-color: #ffffff;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: #000;
+                        z-index: 222;
+                    }
+                    .fa-heart:hover {
+                        color: red;
+                    }
+                    .content-3 {
+                        width: 300px;
+                        height: 300px;
+                        position: absolute;
+                        top: 0%;
+                        left: 0%;
+                        right: 0%;
+                        bottom: 0%;
+                        opacity: 0;
+                        transition: opacity 1.6s;
+                        border-radius: 20px;
+                        h3 {
+                            font-family: "Dancing Script", cursive;
+                            text-transform: capitalize;
+                            text-align: center;
+                            font-size: 25px;
+                            margin: 20px 0px 50px;
+                            color: rgba(255, 255, 255, 0.911);
+                            position: absolute;
+                            top: 20%;
+                            right: 35%;
+                        }
+                        p {
+                            font-family: "Dancing Script", cursive;
+                            text-transform: capitalize;
+                            font-size: 25px;
+                            color: white;
+                            text-align: center;
+                            position: absolute;
+                            top: 50%;
+                            right: 18%;
+                        }
+                        #icon-2 {
+                            font-size: 25px;
+                            text-align: center;
+                            color:#ffffff;
+                            margin-left: 45%;
+                            margin-top: 20px;
+                            position: absolute;
+                            top: 70%;
+                            right: 45%;
+                            cursor: pointer;
+                        }
+                        #icon-2:hover {
+                            color: red;
+                        }
+                    }
+            }
+            .pro-3:hover .content-3 {
+                opacity: 1; 
+                background-color: rgba(0, 0, 0, 0.297);
+            }
+    }
+    .sec-2 {
+        width: 100%;
+        height: 500px;
+        margin-bottom: 300px;
+        position: relative;
+            .pro-1 {
+                width: 300px;
+                height: 300px;
+                background-color: #ffffff;
+                position: absolute;
+                right: 10%;
+                top: 30px;
+                border-radius: 20px;
+                    img {
+                        width: 300px;
+                        height: 300px;
+                        border-radius: 20px;
+                    }
+                    span {
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        position: absolute;
+                        top: 20px;
+                        right: 23px;
+                        background-color: rgb(255, 0, 0);
+                        border-radius: 5px;
+                        text-align: center;
+                        padding: 10px 42px 10px 10px;
+                        z-index: 222;
+                    }
+                    .fa-heart{
+                        position: absolute;
+                        top: 20px;
+                        left: 30px;
+                        font-size: 20px;
+                        background-color: #ffffff;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: #000;
+                        z-index: 222;
+                    }
+                    .fa-heart:hover {
+                        color: red;
+                    }
+                    .content-1 {
+                        width: 300px;
+                        height: 300px;
+                        position: absolute;
+                        top: 0%;
+                        left: 0%;
+                        right: 0%;
+                        bottom: 0%;
+                        opacity: 0;
+                        transition: opacity 1.6s;
+                        border-radius: 20px;
+                        h3 {
+                            font-family: "Dancing Script", cursive;
+                            text-transform: capitalize;
+                            text-align: center;
+                            font-size: 25px;
+                            margin: 20px 0px 50px;
+                            color: rgba(255, 255, 255, 0.911);
+                            position: absolute;
+                            top: 20%;
+                            right: 30%;
+                        }
+                        p {
+                            font-family: "Dancing Script", cursive;
+                            text-transform: capitalize;
+                            font-size: 25px;
+                            color: white;
+                            text-align: center;
+                            position: absolute;
+                            top: 50%;
+                            right: 18%;
+                        }
+                        #icon-2 {
+                            font-size: 25px;
+                            text-align: center;
+                            color:#ffffff;
+                            margin-left: 45%;
+                            margin-top: 20px;
+                            position: absolute;
+                            top: 70%;
+                            right: 45%;
+                            cursor: pointer;
+                        }
+                        #icon-2:hover {
+                            color: red;
+                        }
+                    }
+            }
+            .pro-1:hover .content-1 {
+                opacity: 1; 
+                background-color: rgba(0, 0, 0, 0.297);
+            }
+            .pro-2 {
+                width: 300px;
+                height: 300px;
+                background-color: #ffffff;
+                position: absolute;
+                right: 40%;
+                top: 30px;
+                border-radius: 20px;
+                    img {
+                        width: 300px;
+                        height: 300px;
+                        border-radius: 20px;
+                    }
+                    span {
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        position: absolute;
+                        top: 20px;
+                        right: 23px;
+                        background-color: rgb(255, 3, 3);
+                        border-radius: 5px;
+                        text-align: center;
+                        padding: 10px 42px 10px 10px;
+                        z-index: 222;
+                    }
+                    .fa-heart{
+                        position: absolute;
+                        top: 20px;
+                        left: 30px;
+                        font-size: 20px;
+                        background-color: #ffffff;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: #000;
+                        z-index: 222;
+                    }
+                    .fa-heart:hover {
+                        color: red;
+                    }
+                    .content-2 {
+                        width: 300px;
+                        height: 300px;
+                        position: absolute;
+                        top: 0%;
+                        left: 0%;
+                        right: 0%;
+                        bottom: 0%;
+                        opacity: 0;
+                        transition: opacity 1.6s;
+                        border-radius: 20px;
+                        h3 {
+                            font-family: "Dancing Script", cursive;
+                            text-transform: capitalize;
+                            text-align: center;
+                            font-size: 25px;
+                            margin: 20px 0px 50px;
+                            color: rgba(255, 255, 255, 0.911);
+                            position: absolute;
+                            top: 20%;
+                            right: 35%;
+                        }
+                        p {
+                            font-family: "Dancing Script", cursive;
+                            text-transform: capitalize;
+                            font-size: 25px;
+                            color: white;
+                            text-align: center;
+                            position: absolute;
+                            top: 50%;
+                            right: 18%;
+                        }
+                        #icon-2 {
+                            font-size: 25px;
+                            text-align: center;
+                            color:#ffffff;
+                            margin-left: 45%;
+                            margin-top: 20px;
+                            position: absolute;
+                            top: 70%;
+                            right: 45%;
+                            cursor: pointer;
+                        }
+                        #icon-2:hover {
+                            color: red;
+                        }
+                    }
+            }
+            .pro-2:hover .content-2 {
+                opacity: 1; 
+                background-color: rgba(0, 0, 0, 0.297);
+            }
+            .pro-3 {
+                width: 300px;
+                height: 300px;
+                background-color: #ffffff;
+                position: absolute;
+                left: 10%;
+                top: 30px;
+                border-radius: 20px;
+                    img {
+                        width: 300px;
+                        height: 300px;
+                        border-radius: 20px;
+                    }
+                    span {
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        position: absolute;
+                        top: 20px;
+                        right: 23px;
+                        background-color: rgb(255, 0, 0);
+                        border-radius: 5px;
+                        text-align: center;
+                        padding: 10px 42px 10px 10px;
+                        z-index: 222;
+                    }
+                    .fa-heart{
+                        position: absolute;
+                        top: 20px;
+                        left: 30px;
+                        font-size: 20px;
+                        background-color: #ffffff;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: #000;
+                        z-index: 222;
+                    }
+                    .fa-heart:hover {
+                        color: red;
+                    }
+                    .content-3 {
+                        width: 300px;
+                        height: 300px;
+                        position: absolute;
+                        top: 0%;
+                        left: 0%;
+                        right: 0%;
+                        bottom: 0%;
+                        opacity: 0;
+                        transition: opacity 1.6s;
+                        border-radius: 20px;
+                        h3 {
+                            font-family: "Dancing Script", cursive;
+                            text-transform: capitalize;
+                            text-align: center;
+                            font-size: 25px;
+                            margin: 20px 0px 50px;
+                            color: rgba(255, 255, 255, 0.911);
+                            position: absolute;
+                            top: 20%;
+                            right: 35%;
+                        }
+                        p {
+                            font-family: "Dancing Script", cursive;
+                            text-transform: capitalize;
+                            font-size: 25px;
+                            color: white;
+                            text-align: center;
+                            position: absolute;
+                            top: 50%;
+                            right: 18%;
+                        }
+                        #icon-2 {
+                            font-size: 25px;
+                            text-align: center;
+                            color:#ffffff;
+                            margin-left: 45%;
+                            margin-top: 20px;
+                            position: absolute;
+                            top: 70%;
+                            right: 45%;
+                            cursor: pointer;
+                        }
+                        #icon-2:hover {
+                            color: red;
+                        }
+                    }
+            }
+            .pro-3:hover .content-3 {
+                opacity: 1; 
+                background-color: rgba(0, 0, 0, 0.297);
+            }
+    }
+}
+.main-3 {
+    .sec-4{
+        height: 90vh;
+        margin-top: -350px;
+    }
+    .sec-4-title1{
+        color: gold;
+        font-size: 40px;
+        text-align: center;
+        font-family: "Dancing Script", cursive;
+        text-transform: capitalize;
+    }
+    .line {
+        width: 220px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: gold;
+        margin-bottom: 60px;
+        margin-left: 42%;
+    }
+
+    .features-parent{
+        width: 90%;
+        height: 250px;
+        margin: auto;
+        display: flex;
+        overflow: hidden;
+    }
+    .Content-sec5{
+        background-color: #ffffffde;
+        width: 50%;
+        height: 160px;
+        margin: 25px;
+        position: relative;
+        border-top: gold 3px solid;
+    }
+    
+    .icon2{
+        position: absolute;
+        color: #000000;
+        font-size: 30px;
+        left: 15px;
+        top: 20px;
+    }
+    .features-parent h2{
+        position: absolute;
+        top: 25px;
+        left: 65px;
+        color: #000;
+    }
+    
+    span {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        font-size: 25px;
+        color: #000000;
+        font-weight: 600;
+        font-family: "Dancing Script", cursive;
+        text-transform: capitalize;
+    }
+    .cover4{
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    
+    .Content-sec5::after{
+        content:"" ;
+        position: absolute;
+    
+        width: 0;
+        height: 0;
+    
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        transition: 0.8s;
+        opacity: 0;
+    }
+    .Content-sec5:hover::after{
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        border-bottom: 3px gold solid ;
+        
+    }
+    .Content-sec5:hover  .cover4 {
+        color: #000000;
+        transition: 1s;
+    }
+    .Content-sec5:hover {
+        h2 {
+            color: #eee;
+        }
+        span {
+            color: #eee;
+        }
+        .icon2 {
+            color: gold;
+        }
+    }
+    
+}
+.main-4 {
+    width: 100%;
+    margin-bottom: 300px;
+    .sec-1 {
+        width: 100%;
+        position: relative;
+        .about-us {
+            h1 {
+                width: 260px;
+                translate: 20% 0%;
+                text-transform: capitalize;
+                color: gold;
+                font-size: 35px;
+                font-family: "Dancing Script", cursive;
+                padding-bottom: 20px;
+                margin-top: 100px;    
+            }
+            .line {
+                width: 160px;
+                height: 3px;
+                border-radius: 50%;
+                background-color: gold;
+                margin-bottom: 60px;
+                margin-left: 30px;
+            }
+            .content {
+                margin-left: 30px;
+                p {
+                    span {
+                        margin-left: 10px;
+                        font-family: "Dancing Script", cursive;
+                        font-size: 20px;
+                    }
+                    i {
+                        margin-bottom: 20px;
+                        color: gold;
+                    }
+                }
+            }
+        }
+        .img {
+            width: 300px;
+            height: 300px;
+            border: solid 5px white;
+            border-radius: 50%;
+            position: absolute;
+            right: 50px;
+            top: 10%;
+                img {
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                }
+                .parent-divs {
+                    width: 150px;
+                    height: 50px;
+                    translate: 85% 60%;
+                    div {
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 50%;
+                        background-color: #eee;
+                        display: inline-block;
+                        margin-right: 7px;
+                        cursor: pointer;
+                    }
+                    div:hover {
+                        background-color: gold;
+                    }
+                    .frist-div {
+                        background-color: gold;
+                    }
+                }
+        }
+    }
+}
+.main-5 {
+    .sec-1{
+        height: 90vh;
+        width: 100%;
+        
+    }
+    .home-2{
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+    }
+    
+    .background{
+        background-image: url(../photos/WhatsApp\ Image\ 2024-10-17\ at\ 00.37.44_5475abe1.jpg);
+        background-attachment: fixed;
+        background-size: 100%;
+        width: 100%;
+        height: 400px;
+        position: relative;
+    }
+    .contant{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.7);
+    }
+    .parent-items{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .item{
+        color: #fff;
+        float: left;
+        margin-left: 200px;
+        letter-spacing: 4px;
+    }
+    
+    .icon{
+        margin: 10px 0;
+        color: #ffffff;
+        font-size: 40px;
+    }
+    .icon:hover{
+        color: gold;
+        cursor: pointer;
+    }
+    
+}
+.main-6 {
+    .sec-1{
+        height: 700px;
+        width: 100%;
+        margin: 100px 0px 200px;
+        position: relative;
+            .title{
+                padding-top: 50px;
+                font-size: 40px;
+                color: gold;
+                text-align: center;
+                font-family: "Dancing Script", cursive;
+                text-transform: capitalize;
+            }
+            .line{
+                height: 4px;
+                width: 250px;
+                border-radius: 50%;
+                background-color: gold;
+                margin: auto;
+            }
+            .container, .container-2, .container-3{
+                width: 25%;
+                margin: auto;
+                margin-top: 50px;
+             text-align: center;
+                    .content{
+                        background-color: #c4bcbc;
+                        background-image: url(../photos/WhatsApp\ Image\ 2024-10-17\ at\ 00.37.43_98697119.jpg);
+                        background-size: cover;
+                        height: 380px;
+                        width: 320px;
+                        border-bottom: gold 3px solid;
+                        margin: 40px 10px;
+                        position: relative;
+                        z-index: 100;
+                        color: #00fff2;
+                            .cover{
+                                z-index: 20;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                background-color: rgba(0, 0, 0, 0.5);
+                                h2{
+                                    padding-top: 20px;
+                                }
+                                .cercel{
+                                    width: 110px;
+                                    height: 110px;
+                                    border-radius: 100%;
+                                    border: 1px #00fff2 solid;
+                                    margin: auto;
+                                    margin-top: 25px;
+                                    display: inline-block;
+                                        h3{
+                                            padding-top: 10px;
+                                            font-size: 40px;
+                                            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;                                    
+                                        }
+                                        span{
+                                            font-size: 25px;
+                                        }
+                                }
+                                button{
+                                    width: 150px;
+                                    height: 30px;
+                                    background-color: #00fff268;
+                                    margin-top: 25px;
+                                    border: none;
+                                    border-radius: 10px;
+                                    color: #FFf;
+                                    letter-spacing: 2px;
+                                
+                                }
+                                p{
+                                    margin: 10px;
+                                }                        
+                            }
+                    }
+                    .content:hover{
+                        color: #fff;
+                    }
+                    .content::after{
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 0;
+                        top: 0;
+                        left: 0;
+                        background-color: rgba(255, 255, 255, 0.712);
+                        transition: 0.8s;
+                        opacity: 0;
+                    }
+                    .content:hover::after{
+                        width: 100%;
+                        height: 100%;
+                        opacity: 1;
+                    }
+                    .content:hover .cercel {
+                        color: #000000;
+                        background-color: #0b3e6545;
+                        transition: 1s;
+                    }
+            }
+            .container{
+                position: absolute;
+                top: 15%;
+                left: 10%;
+            }
+            .container-2{
+                position: absolute;
+                top: 15%;
+                left: 40%;
+            }
+            .container-3 {
+                position: absolute;
+                top: 15%;
+                right: 5%;
+            }
+    }
+}
+.main-7 {
+    .sec-1{
+        height: 80vh;
+        width: 100%;
+            .parent-all-content{
+                height: 500px;
+                margin-top: 150px;
+                width: 100%;
+                position: relative;
+                background-image: url(../photos/WhatsApp\ Image\ 2024-10-17\ at\ 00.37.43_9eed77f9.jpg);
+                background-attachment: fixed;
+                background-size: 100%;
+                
+                    .all-content{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background-color: rgba(0, 0, 0, 0.7);
+                            .parent-content{
+                                color: #fff;
+                                width: 70%;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50% , -50%);
+                                    .content{
+                                        float: left;
+                                        width: 50%;
+                                        .image{
+                                            width: 90px;
+                                            height: 90px;
+                                            border-radius: 100%;
+                                            background-size: cover;
+                                            float: left;
+                                        }
+                                        .text-box{
+                                            padding-left: 110px ;
+                                            padding-top: 20px;
+                                            h1 {
+                                                text-transform: capitalize;
+                                                font-family: "Dancing Script", cursive;
+                                                color: gold;
+                                                font-size: 25px;
+                                            }
+                                            span{
+                                                font-family: "Dancing Script", cursive;
+                                                color: gold;
+                                                font-weight: 600;
+                                                font-size: 20px;
+                                                text-transform: capitalize;
+                                            }
+                                        }
+                                        p{
+                                            padding: 30px 100px;
+                                            font-size: 20px;
+                                            line-height: 30px;
+                                            font-family: "Dancing Script", cursive;
+                                            text-transform: capitalize;
+                                        }
+                                    }
+                            }                            
+                    }
+            }
+    }
+}
+.main-8 {
+        .sec-1{
+            width: 100%;
+            height: 90vh;
+            margin: 200px 0px;
+            .box-title{
+                text-align: center;
+                padding-top: 50px;
+                    h2{
+                        font-size: 33px;
+                        padding-bottom: 10px;
+                        color: gold;
+                        font-family: "Dancing Script", cursive;
+                        text-transform: capitalize;
+                    }        
+                    span{
+                        background-color: gold;
+                        width: 200px;
+                        height: 3px;
+                        border-radius: 50%;
+                        display: block;
+                        margin: auto;
+                    }
+            }
+            .container{
+                width: 90%;
+                margin: auto;
+                margin-top: 30px;
+                position: relative;
+                    .parent-content{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background-color: rgba(0, 0, 0, 0.5);
+                            .content {
+                                .parent-items, .parent-items-nth{
+                                    float: left;
+                                    width: 30%;
+                                    height: 400px;
+                                    background-color: #64717ce8;
+                                    padding: 18px 10px;
+                                    margin-top: 50px;
+                                    text-align: center;
+                                    border-radius: 10PX;
+                                    position: relative;
+                                   .item{
+                                            width: 95%;
+                                            margin: auto;
+                                            position: relative;
+                                            z-index: 25;
+                                                img{
+                                                    width: 100%;
+                                                    border-radius: 10px;
+                                                    height: 300px;
+                                                }
+                                                .parent-links{
+                                                    position: absolute;
+                                                    top: 0;
+                                                    right: 5px;
+                                                    left: 0;
+                                                    bottom: 0;
+                                                    opacity: 0;
+                                                    transition: 1s;
+                                                    z-index: 15;
+                                                    a{
+                                                        display: block;
+                                                        width: 40px;
+                                                        height: 40px;
+                                                        background-color: #000000;
+                                                        color: #fff;
+                                                        margin-left: auto;
+                                                        margin-top: 5px;
+                                                        border-radius: 100%;
+                                                        i{
+                                                            line-height: 40px;
+                                                            font-size: 20px;
+                                                        }
+                                                    }
+                                                    a:hover{
+                                                        background-color: rgb(40, 12, 201);
+                                                    }
+                                                }
+                                                .parent-links:hover{
+                                                    opacity: 1;
+                                                }        
+                                        }
+                                        .info{
+                                            position: relative;
+                                            z-index: 10;
+                                            .info-title{
+                                                text-transform: capitalize;
+                                                color: #fff;
+                                                padding: 10px 0;
+                                                color: gold;
+                                                font-family: "Dancing Script", cursive;
+                                                text-transform: capitalize;
+                                            }
+                                            .info-price{
+                                                color: #ffffff;
+                                                font-size: 20px;
+                                                font-weight: 500;
+                                                color: gold;
+                                                font-family: "Dancing Script", cursive;
+                                                text-transform: capitalize;
+                                            }
+                                        }
+                                        
+                                }
+                                .parent-items:after {
+                                    content: "";
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 0;
+                                    top: 0;
+                                    left: 0;
+                                    background-color: rgba(0, 0, 0, 0.9);
+                                    transition: 0.8s;
+                                }
+                                .parent-items:hover::after {
+                                    width: 100%;
+                                    height: 100%;
+                                
+                                }
+                                .parent-items:before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    background-color: rgba(0, 0, 0, 0.5);
+                                    transition: 0.8s;
+                                }
+                                .parent-items:hover::before {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                                .parent-items-nth {
+                                    margin-inline: 20px;
+                                }
+                                .parent-items-nth:after {
+                                    content: "";
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 0;
+                                    top: 0;
+                                    left: 0;
+                                    background-color: rgba(0, 0, 0, 0.9);
+                                    transition: 0.8s;
+                                }
+                                .parent-items-nth:hover::after {
+                                    width: 100%;
+                                    height: 100%;
+                                
+                                }
+                                .parent-items-nth:before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    background-color: rgba(0, 0, 0, 0.5);
+                                    transition: 0.8s;
+                                }
+                                .parent-items-nth:hover::before {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                    }
+            }
+    
+        }
+}
+.main-9 {
+    .sec-1{
+        height: 95vh;
+        width: 100%;
+        margin: 200px 0px;
+        overflow: hidden;
+        .parent-title {
+            .titel{
+                font-size: 30px;
+                text-align: center;
+                padding-top: 40px;
+                color: gold;
+                font-family: "Dancing Script", cursive;
+                text-transform: capitalize;
+            }
+            .line{
+                background-color: gold;
+                width: 190px;
+                height: 4px;
+                display: block;
+                border-radius: 50%;
+                margin: 25px auto;
+                font-family: "Dancing Script", cursive;
+                text-transform: capitalize;
+            }
+        }    
+            .container{
+                width: 80%;
+                margin: auto;
+                    .content {
+                        .parent-items, .parent-items-nth, .parent-items-last {
+                            float: left;
+                            width: 30%;
+                            background-color: #fff;
+                            position: relative;                
+                            border-top:3px solid gold;
+                            border-bottom:3px solid gold;
+                            .parent-img {
+                                padding: 15px 15px;
+                                img {
+                                    width: 270px;
+                                    height: 300px;
+                                    border-radius: 10px;
+                                }
+                            }
+                            .info{
+                                padding: 20px;
+                                h3{
+                                    color: #000;
+                                    font-weight: bold;
+                                    margin-bottom: 25px;
+                                    font-family: "Dancing Script", cursive;
+                                    text-transform: capitalize;                    
+                                }
+                                p{
+                                    color: #000000;
+                                    margin-bottom: 20px;
+                                    line-height: 1.5;
+                                    font-family: "Dancing Script", cursive;
+                                    text-transform: capitalize;                    
+                                }
+                                a{
+                                    text-decoration: none;
+                                    color: #0069fd;
+                                    position: relative;
+                                    z-index: 200;
+                                    font-weight: 800;
+                                    font-family: "Dancing Script", cursive;
+                                    text-transform: capitalize;                    
+                                }
+                                a:hover{
+                                    color: #000000;
+                                }
+                            }
+                        }
+                        .parent-items:before {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 0;
+                            top: 0;
+                            left: 0;
+                            background-color: rgba(19, 1, 177, 0.445);
+                            transition: 0.8s;
+                        }
+                        .parent-items:hover::before {
+                            width: 100%;
+                            height: 100%;
+                        } 
+                        .parent-items-nth {
+                            margin-inline: 50px;
+                        }
+                        .parent-items-nth:before {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 0;
+                            top: 0;
+                            left: 0;
+                            background-color: rgba(255, 255, 255, 0.5);
+                            transition: 0.8s;
+                        }
+                        .parent-items-nth:hover::before {
+                            width: 100%;
+                            height: 100%;
+                        } 
+                        .parent-items-last:before {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 0;
+                            top: 0;
+                            left: 0;
+                            background-color: rgba(172, 0, 0, 0.5);
+                            transition: 0.8s;
+                        }
+                        .parent-items-last:hover::before {
+                            width: 100%;
+                            height: 100%;
+                        } 
+                    }
+            }
+        }
+    
+}
+.footer{
+    height: 320px;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    background-color: var(--footer-color);    
+        h1 {
+            font-family: "Dancing Script", cursive;
+            text-transform: capitalize;
+            color: gold;
+            font-size: 50px;
+        }
+        .parent-icons-footer{
+            list-style: none;
+            margin: 50px 0px  ;
+            position: relative;
+                li{
+                    position: relative;
+                    background-color: #6195ff;
+                    margin: 0 4px;
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    z-index: 1;
+                    border-radius: 50%;
+                        a{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            color: #fff;
+                            line-height: 50px;
+                            padding-top: 15px;
+                            padding-right: 15px;
+                            font-size: 20px;
+                                i {
+                                    position: absolute;
+                                    top: 15px; 
+                                    right: 15px;
+                                }
+                        }
+                        a::after{
+                            content: "";
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            bottom: 0;
+                            left:0 ;
+                            border-radius: 50%;
+                            opacity: 0;
+                            transition: 0.5s;
+                        }
+                        a:hover::after{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                            opacity: 1;
+                            outline: 3px solid #fff;
+                        }
+                }
+        }
+        p {
+            font-family: "Dancing Script", cursive;
+            font-size: 25px;
+            text-transform: capitalize;
+            margin-top: 50px;
+        }
+}
+        
+    
